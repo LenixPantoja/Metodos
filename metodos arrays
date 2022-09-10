@@ -1,0 +1,56 @@
+listaProfes=[
+  'Madeline Narvaez',
+  'Daniel Arteaga',
+  'Alejandra Zuleta Medina',
+  'Danny Michael Cardenas Martínez',
+  'Fabian Parra Pay',
+  'Favio Nicolas Rosero Rodríguez',
+  'Giovanni Albeiro Hernández Pantoja',
+  'Javier Mauricio López Moreno',
+  'José Javier Villalba Romero',
+  'Leidy Marcela Gómez Melo',
+  'María Fernanda Granda Romero',
+  'Martha Nubia Carrillo Obando',
+  'Nancy Cristina Legarda López'
+]
+
+#Creamos una lista donde almacenaremos los docentes que dictan clases en octavo semestre con el metodo append()
+listaDocentesOctavo=[]
+
+listaDocentesOctavo.append(listaProfes[0])
+listaDocentesOctavo.append(listaProfes[1])
+listaDocentesOctavo.append(listaProfes[2])
+listaDocentesOctavo.append(listaProfes[4])
+listaDocentesOctavo.append(listaProfes[5])
+listaDocentesOctavo.append(listaProfes[10])
+
+for i in listaDocentesOctavo:
+  print(i)
+
+#Haciendo uso del metodo clear podemos vaciar la lista
+
+listaDocentesOctavo.clear()
+if len(listaDocentesOctavo)==0:
+  print()
+  print('Vacio')
+else:
+  for i in listaDocentesOctavo:
+    print(i)
+
+
+Animales1=['Perro','gato','leon','elefante']
+Animales2=['Serpiente','Pato','aguila','Colibri','gato','gato']
+
+#Haciendo uso del metodo extends vamos a unir las dos listas
+
+Animales1.extend(Animales2)
+print(Animales1)
+
+#Con el metodo count podemos contar cuantas similitudes de cadenas o numeros hay en la lista
+
+print(Animales1.count('gato'))
+
+#index nos sirve para saber la posicion de un elemento
+
+Animales1.index('leon')
+print(Animales1.pop())
